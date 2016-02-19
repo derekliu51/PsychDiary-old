@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+    <head>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+        <link href="/CSS/test.css" rel="stylesheet">
+    </head>
+    
+    <body>
+        
+        <!--Navigation Bar Top-->
+        <div class="navbar navbar-default">
+          <div class="container-fluid">
+              
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">PsychDiary</a>
+
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle Navigation</span> 
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+              
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                      <li><a href="index.html">HOME</a></li>
+                      <li><a href="tool.html">TOOL</a></li> 
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                      <li><a href="#">About Us</a></li>
+                      <li><a href="#">Contact Us</a></li> 
+                    </ul>
+                </div>
+
+          </div>
+        </div>
+        
+        <!--Question Slides-->
+        
+        <div class="jumbotron fade-in">
+            
+          <button class="arrow-prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+          </button>
+            
+          <button class="arrow-next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </button>
+            
+            <div class="psychquestions">
+                <div class="container mood-question question active-question">
+                        <h1>What is your mood?</h1>
+                        <p>Choose one or more of the following:</p>
+                        <div class="cloudcontainer">
+                            <button class="cloud choice"><p>Happy</p></button>
+                        </div>
+                        <div class="cloudcontainer">
+                            <button class="cloud choice"><p>Sad</p></button>
+                        </div>
+                        <div class="cloudcontainer">
+                            <button class="cloud choice"><p>Indifferent</p></button>
+                        </div>
+                        <div class="cloudcontainer">
+                            <button class="cloud choice"><p>Tired</p></button>
+                        </div>
+                        <div class="cloudcontainer">
+                            <button class="cloud choice"><p>Confused</p></button>
+                    </div>
+                </div>
+
+                <div class="container weather-question question">
+                        <h1>What does the weather feel like?</h1>
+                        <p>Choose one or more of the following:</p>
+                    <div class="row">
+                        <div class="cloudcontainer col-md-2">
+                            <button class="cloud choice"><p>Comfy</p></button>
+                        </div>
+                        <div class="cloudcontainer col-md-2">
+                            <button class="cloud choice"><p>Sluggish</p></button>
+                        </div>
+                        <div class="cloudcontainer col-md-2">
+                            <button class="cloud choice"><p>Invigorating</p></button>
+                        </div>
+                        <div class="cloudcontainer col-md-2">
+                            <button class="cloud choice"><p>Normal</p></button>
+                        </div>
+                        <div class="cloudcontainer col-md-2">
+                            <button class="cloud choice"><p>Chaotic</p></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container family-question question">
+                        <h1>How do you like your family?</h1>
+                        <p>Choose one or more of the following:</p>
+                    <div class="row">
+                        <div class="cloudcontainer col-md-2">
+                            <button class="cloud choice"><p>Father</p></button>
+                        </div>
+                        <div class="cloudcontainer col-md-2">
+                            <button class="cloud choice"><p>Mother</p></button>
+                        </div>
+                        <div class="cloudcontainer col-md-2">
+                            <button class="cloud choice"><p>Brother</p></button>
+                        </div>
+                        <div class="cloudcontainer col-md-2">
+                            <button class="cloud choice"><p>Sister</p></button>
+                        </div>
+                        <div class="cloudcontainer col-md-2">
+                            <button class="cloud choice"><p>Nobody</p></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container end-question question">
+                        <h1>Congratulations!</h1>
+                        <p>You've completed today's entry!</p>
+                        <div class="cloudcontainer col-md-2">
+                            <button onclick="location.href='tool.html'" class="cloud"><p>Restart</p></button>
+                        </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--Carousel-->
+        
+              <ol class="dot-indicators">
+                <li class="dot active-dot"></li>
+                <li class="dot"></li>
+                <li class="dot"></li>   
+                <li class="dot"></li>
+              </ol>
+
+
+        <footer class="footer">
+        </footer>
+        
+        <script src="/JavaScript/jquery.min.js"></script>
+        <script src="/JavaScript/app.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+        <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73407295-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    </body>
+</html>

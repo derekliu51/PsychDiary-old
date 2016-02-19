@@ -1,0 +1,100 @@
+
+
+.header {
+  background-color: rgba(255, 255, 225, .70);
+  border-bottom: 1px solid #ddd;
+  
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  
+  font-size: 17px;
+  padding: 15px;
+}
+
+a {
+    color:inherit;
+}
+
+img{
+    background-image:none;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+/* Menu */ 
+
+.header .menu {
+  float: right;
+  list-style: none;
+  margin-top: 5px;
+}
+
+.menu li {
+    display:inline;
+    padding-right: 20px;
+    color: lightgray;
+}
+
+/* Questionairre */
+.questionairre {
+    color: gray;
+    font-size: 15px;
+    position:relative;
+    text-align:left;
+    margin-top:5%;
+}
+
+.question h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    margin-top: 105px;
+    margin-bottom: 0px;
+    color: #363636; 
+}
+
+.question p {
+    color: #b7b7b7;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 5px;
+    
+}
+
+
+.psych-choices li {
+    display: inline;
+    text-align: center;
+    position: relative;
+    float:left;
+    left:10%;
+    color: #959595;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.15em;
+  line-height: 1.75em;
+  margin-bottom: 15px;
+  margin-top: 16px;
+}
+
+.psych-choices img {
+    height: 90px;
+    width: 120px;
+    position:relative;
+    top: 10px;
+    padding-left:10px;
+    padding-right:10px;
+    margin-left:10px;
+    margin-right:10px;
+}
+
+
+.question {
+    display:none;
+}
+
+.active-question {
+    display:block;
+}
